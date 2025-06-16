@@ -8,7 +8,7 @@ module.exports = defineConfig({
     specPattern: "**/*.feature",
     baseUrl: "https://automationpratice.com.br/",
     execTimeout: 5000,
-    setupNodeEvents(on, config) { 
+    setupNodeEvents(on, config) {
       addCucumberPreprocessorPlugin(on, config);
 
       on(
