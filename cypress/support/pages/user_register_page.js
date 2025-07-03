@@ -27,7 +27,8 @@ const random = {
     fields: {
         name: faker.person.fullName(),
         email: faker.internet.email(),
-        password: faker.internet.password(6, false, /[a-zA-Z0-9]/)
+        password: faker.internet.password({ length: 10 }),
+        wrongPassword: faker.internet.password({ length: 5 })
     }
 }
 export { random }

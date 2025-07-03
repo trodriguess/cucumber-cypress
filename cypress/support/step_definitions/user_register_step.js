@@ -14,7 +14,7 @@ When ('I click on the Register button', () => {
     user_register_page.registerButtonClick()
 })
 
-Then("I should see the error message {string}", (message) => {
+Then("I should see the Register error message {string}", (message) => {
     user_register_page.errorMessage(message)
 })
 
