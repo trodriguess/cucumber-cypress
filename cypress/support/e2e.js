@@ -15,3 +15,15 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import 'cypress-mochawesome-reporter/register';
+import '@bahmutov/cypress-code-coverage/support'
+
+const addContext = require('mochawesome/addContext');
+
+Cypress.on('test:after:run', (test, runnable) => {
+  if (test.state === 'failed') {
+    const screenshotFileName = `${runnable.parent.title} -- ${test.title} (failed).png`;
+    const screenshotPath = `screenshots/${Cypress.spec.name}/${screenshotFileName}`;
+    addContext({ test }, screenshotPath);
+  }
+});
