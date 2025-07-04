@@ -7,6 +7,7 @@ const addContext = require('./node_modules/mochawesome/src/addContext')
 
 
 module.exports = defineConfig({
+  projectId: 'i655ro',
   //reporter: 'cypress-mochawesome-reporter',
   //video: true,
   //retries: 1,
@@ -38,11 +39,14 @@ module.exports = defineConfig({
     video: false,
     reporter: 'mochawesome',
     reporterOptions: {
+      charts: true,
       reportDir: 'cypress/results',
-      overwrite: false,
+      overwrite: true,
       html: true,
       json: false,
-      timestamp: "mmddyyyy_HHMMss"
+      timestamp: "mmddyyyy_HHMMss",
+      reportTitle: 'Projeto do Curso de Cypress',
+      reportPageTitle: 'Projeto do Curso de Cypress'
     }
   },
 });
