@@ -11,7 +11,7 @@ const elements = {
     fields: {
         user: '#user',
         email: '#email',
-        password: '#passwordSS'
+        password: '#password'
     },
     messages: {
         ivalidfield: '#errorMessageFirstName',
