@@ -1,0 +1,22 @@
+# nome da Pipeline
+name: Run Basic Tests
+
+# em que momento a Pipeline é executada
+on:
+    pull_request:
+      branches: [master]
+
+jobs:
+    # o que vai ser feito na Pipeline
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+            record: true
+        env:
+            CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          
