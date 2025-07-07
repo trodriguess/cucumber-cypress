@@ -4,7 +4,7 @@ name: Run Basic Tests
 # em que momento a Pipeline é executada
 on:
     pull_request:
-      branches: [master]
+      branches: [main]
 
 jobs:
     # o que vai ser feito na Pipeline
@@ -12,11 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install Node.js
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
         run: npm install
       - name: Cypress run
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v4
         with:
             record: true
         env:
