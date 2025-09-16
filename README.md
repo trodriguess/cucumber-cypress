@@ -28,6 +28,12 @@ Projeto para estudo e prática de testes end-to-end combinando **Cypress** com *
 
 ## Tecnologias utilizadas
 
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,cypress,gherkin,nodejs,npm" />
+  </a>
+</p>
+
 - **JavaScript** — lógica de testes, step definitions  
 - **Cypress** — execução de testes em navegador, interações com UI  
 - **Cucumber / Gherkin** — escrita de cenários em linguagem natural, separando lógica de descrição  
