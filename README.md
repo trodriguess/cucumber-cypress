@@ -79,10 +79,21 @@ Projeto para estudo e prática de testes end-to-end combinando **Cypress** com *
 
 ---
 
-## Autora
+# Autora
 
-👩‍💻 Thais Rodrigues
+### 👩‍💻 Thais Rodrigues
 
-📧 thaiss.rodriguess@icloud.com
-
-🌐 <a href="https://github.com/trodriguess" target="_blank">GitHub</a>
+<p align="left">
+  <a href="https://discordapp.com/users/thaiss.rodriguess">
+    <img height="45" width="45" src="https://skillicons.dev/icons?i=discord">
+  </a> 
+  <a href = "mailto:thaiss.rodriguess@icloud.com">
+    <img height="50" width="50" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png">
+  </a>
+    <a href="https://www.linkedin.com/in/thaiss-rodriguess/">
+      <img height="45" width="45" src="https://go-skill-icons.vercel.app/api/icons?i=linkedin">
+    </a>  
+   <a href="https://wa.me/5511961775288">
+     <img height="45" width="45" src="https://github.com/appicons/Whatsapp/blob/master/icons/whatsapp_194x194.png">
+   </a>
+  </p>
