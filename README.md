@@ -4,13 +4,25 @@ Projeto para estudo e prática de testes end-to-end combinando **Cypress** com *
 
 ---
 
-## Estrutura do Projeto / Cenários testados
+## Estrutura do Projeto 
 
 - Configuração inicial do Cypress integrada com Cucumber (arquivos `.feature`)  
 - Uso de Gherkin para descrever cenários de teste de maneira legível  
 - Scripts de teste usando passos definidos em arquivos de step definitions  
 - Execução de testes em modo GUI (Graphical User Interface) e headless, via comando `npx cypress run` 
 - Boa organização de pastas: `cypress/`, arquivos de configuração, etc.  
+
+---
+
+## Cenários de Teste Automatizados
+
+- O projeto cobre os seguintes cenários de testes de ponta a ponta utilizando Cypress com Cucumber:
+- Login com credenciais válidas (sucesso)
+- Login com usuário ou senha inválidos (falha)
+- Tentativa de login com credenciais incorretas (usuário e senha inválidos)
+- Cadastro de novo usuário com dados válidos
+- Tentativa de cadastro com email já existente
+- Tentativa de cadastro com dados inválidos ou incompletos
 
 ---
 
